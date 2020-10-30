@@ -1,9 +1,13 @@
 package com.atmecs.manytoone.util;
 
 
+import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
+
+import com.atmecs.manytoone.entity.Addresss;
+import com.atmecs.manytoone.entity.Employee;
 
 
 
@@ -13,8 +17,8 @@ public class HibernateUtil {
 	static {
 		try {
 			Configuration config = new Configuration();
-			config.addAnnotatedClass(Users.class);
-			config.addAnnotatedClass(UserDetails.class);
+			config.addAnnotatedClass(Employee.class);
+			config.addAnnotatedClass(Addresss.class);
 			config.configure();
 			sessionFactory = config.buildSessionFactory();
 		} catch (Throwable e) {

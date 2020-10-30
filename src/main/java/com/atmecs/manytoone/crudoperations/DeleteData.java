@@ -5,8 +5,8 @@ import java.util.Scanner;
 import org.hibernate.Session;
 import org.hibernate.SessionException;
 
+import com.atmecs.manytoone.entity.Employee;
 import com.atmecs.manytoone.util.HibernateUtil;
-import com.atmecs.onetoonemapping.entity.Users;
 
 
 
@@ -17,10 +17,10 @@ public class DeleteData {
 		try {
 			session.beginTransaction();
 			System.out.println("Enter id to delete record:");
-			Users user = (Users) session.get(Users.class, sc.nextInt());
+			Employee emp = (Employee) session.get(Employee.class, sc.nextInt());
 
-			if (user != null) {
-				session.delete(user);
+			if (emp != null) {
+				session.delete(emp);
 				session.getTransaction().commit();
 				System.out.println("Record deleted successfully..!!");
 			} else {

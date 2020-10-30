@@ -7,7 +7,7 @@
 <!-- JDBC Database Connection settings -->
 
         <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
-        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/users</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/employee</property>
         <property name="hibernate.connection.username">root</property>
         <property name="hibernate.connection.password">Uditsemwal@2905</property>
         
@@ -22,10 +22,9 @@
         <!-- JDBC Connection pool settings -->
         <property name="hibernate.connection.pool_size">1</property>
       
-   		 <property name="current_session_context_class">thread</property>
    		 
    		  <!-- register Entity class -->
-         <mapping class="com.atmecs.onetoonemapping.entity.Users"/>
-         <mapping class="com.atmecs.onetoonemapping.entity.UserDetails"/>
+         <mapping class="com.atmecs.manytoone.entity.Addresss"/>
+         <mapping class="com.atmecs.manytoone.entity.Employee"/>
 </session-factory>
 </hibernate-configuration>
