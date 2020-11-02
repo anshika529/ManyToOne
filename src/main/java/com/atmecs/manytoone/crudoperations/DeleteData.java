@@ -8,8 +8,6 @@ import org.hibernate.SessionException;
 import com.atmecs.manytoone.entity.Employee;
 import com.atmecs.manytoone.util.HibernateUtil;
 
-
-
 public class DeleteData {
 	public void deleteData() {
 		Session session = HibernateUtil.currentSession();

@@ -25,7 +25,7 @@ public class Main {
 				ModifyData modify = new ModifyData();
 				modify.updateData();
 				break;
-				
+
 			case 4:
 				DeleteData delete = new DeleteData();
 				delete.deleteData();
@@ -33,7 +33,7 @@ public class Main {
 			case 5:
 				System.out.println("Exit");
 				break;
-				
+
 			default:
 				System.out.println("Wrong Choice..!!");
 				break;

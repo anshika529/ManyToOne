@@ -8,7 +8,6 @@ import org.hibernate.SessionException;
 import com.atmecs.manytoone.entity.Employee;
 import com.atmecs.manytoone.util.HibernateUtil;
 
-
 public class ReadData {
 	public void readData() {
 		Session session = HibernateUtil.currentSession();

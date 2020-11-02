@@ -1,6 +1,5 @@
 package com.atmecs.manytoone.util;
 
-
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -8,8 +7,6 @@ import org.hibernate.cfg.Configuration;
 
 import com.atmecs.manytoone.entity.Addresss;
 import com.atmecs.manytoone.entity.Employee;
-
-
 
 public class HibernateUtil {
 	public static final SessionFactory sessionFactory;
